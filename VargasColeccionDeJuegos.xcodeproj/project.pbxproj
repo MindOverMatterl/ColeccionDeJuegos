@@ -14,6 +14,7 @@
 		CD3052BA2CAE0F6600AC035A /* VargasColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD3052B82CAE0F6600AC035A /* VargasColeccionDeJuegos.xcdatamodeld */; };
 		CD3052BC2CAE0F6700AC035A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3052BB2CAE0F6700AC035A /* Assets.xcassets */; };
 		CD3052BF2CAE0F6700AC035A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3052BD2CAE0F6700AC035A /* LaunchScreen.storyboard */; };
+		CD3052C72CAE1B1A00AC035A /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3052C62CAE1B1A00AC035A /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CD3052BB2CAE0F6700AC035A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3052BE2CAE0F6700AC035A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3052C02CAE0F6700AC035A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3052C62CAE1B1A00AC035A /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				CD3052BD2CAE0F6700AC035A /* LaunchScreen.storyboard */,
 				CD3052C02CAE0F6700AC035A /* Info.plist */,
 				CD3052B82CAE0F6600AC035A /* VargasColeccionDeJuegos.xcdatamodeld */,
+				CD3052C62CAE1B1A00AC035A /* JuegosViewController.swift */,
 			);
 			path = VargasColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3052C72CAE1B1A00AC035A /* JuegosViewController.swift in Sources */,
 				CD3052B42CAE0F6600AC035A /* ViewController.swift in Sources */,
 				CD3052BA2CAE0F6600AC035A /* VargasColeccionDeJuegos.xcdatamodeld in Sources */,
 				CD3052B02CAE0F6600AC035A /* AppDelegate.swift in Sources */,
