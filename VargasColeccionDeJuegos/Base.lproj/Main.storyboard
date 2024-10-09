@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="mnK-Ga-bcO">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5VQ-OS-Tte">
                             <connections>
-                                <segue destination="dmz-pm-m2w" kind="show" id="5yv-Jx-Rmb"/>
+                                <segue destination="dmz-pm-m2w" kind="show" identifier="juegoSegue" id="5yv-Jx-Rmb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,11 +74,21 @@
                                     <action selector="agregarTapped:" destination="dmz-pm-m2w" eventType="touchUpInside" id="rJh-Za-Ibo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-11-NmL">
+                                <rect key="frame" x="169" y="395" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="dmz-pm-m2w" eventType="touchUpInside" id="UDb-W0-q0m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PDR-9d-A0V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zPw-11-NmL" firstAttribute="centerX" secondItem="QH1-yn-cOL" secondAttribute="centerX" id="3Pu-Pc-eaA"/>
                             <constraint firstItem="MZT-nq-LzM" firstAttribute="centerX" secondItem="Dok-dX-b4E" secondAttribute="centerX" id="HBT-Tg-OVY"/>
+                            <constraint firstItem="zPw-11-NmL" firstAttribute="top" secondItem="Dok-dX-b4E" secondAttribute="bottom" constant="20" id="JfS-hM-KuZ"/>
                             <constraint firstItem="Dok-dX-b4E" firstAttribute="centerX" secondItem="QH1-yn-cOL" secondAttribute="centerX" id="fQR-qw-9Vw"/>
                             <constraint firstItem="yfJ-oF-Qmp" firstAttribute="centerX" secondItem="QH1-yn-cOL" secondAttribute="centerX" id="ggl-0c-ACg"/>
                             <constraint firstItem="yfJ-oF-Qmp" firstAttribute="centerX" secondItem="MZT-nq-LzM" secondAttribute="centerX" id="inM-EY-xFl"/>
@@ -87,6 +97,7 @@
                             <constraint firstItem="Dok-dX-b4E" firstAttribute="top" secondItem="MZT-nq-LzM" secondAttribute="bottom" constant="20" id="pkG-Dy-ZbW"/>
                             <constraint firstItem="MZT-nq-LzM" firstAttribute="top" secondItem="yfJ-oF-Qmp" secondAttribute="bottom" constant="20" id="sOr-Te-JkL"/>
                             <constraint firstItem="yfJ-oF-Qmp" firstAttribute="top" secondItem="PDR-9d-A0V" secondAttribute="top" constant="32" id="vYR-MO-2zE"/>
+                            <constraint firstItem="Dok-dX-b4E" firstAttribute="centerX" secondItem="zPw-11-NmL" secondAttribute="centerX" id="xx2-Kc-cDV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="nuV-ji-0tv">
@@ -104,6 +115,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="Dok-dX-b4E" id="zFQ-ua-jDO"/>
+                        <outlet property="eliminarBoton" destination="zPw-11-NmL" id="fD9-pt-pee"/>
                         <outlet property="juegoImageView" destination="yfJ-oF-Qmp" id="TGW-Xq-Utu"/>
                         <outlet property="tituloTextField" destination="MZT-nq-LzM" id="S2x-cz-TIV"/>
                     </connections>
